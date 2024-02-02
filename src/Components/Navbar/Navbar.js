@@ -23,8 +23,8 @@ export default function Navbar() {
                 <ul>
                     <li><Link to="/"> Home </Link></li>
                     <li><Link to="/Appointment">Appointment</Link></li>
-                    <li><Link to="../Sign_Up/Sign_Up.html" className='btn sign_up_btn'>Sign Up</Link></li>
-                    <li><Link to="../Login/Login.html" className='btn login_btn'>Login</Link></li>
+                    <li><Link to="signup" className='btn sign_up_btn'>Sign Up</Link></li>
+                    <li><Link to="/login" className='btn login_btn'>Login</Link></li>
                 </ul>
             </nav >
         </div >
