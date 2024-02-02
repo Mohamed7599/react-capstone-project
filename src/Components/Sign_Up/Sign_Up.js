@@ -54,7 +54,16 @@ const Sign_Up = () => {
 
     return (
         <div className="container" style={{ marginTop: '5%' }}>
-            <div className="signup-grid">
+            <div className='form-wrapper'>
+                <div class="signup-text">
+                    <h1>Sign Up</h1>
+                </div>
+                <div class="signup-text1" style={{ textAlign: "left" }}>
+                    Already a member?
+                    <span
+                    ><Link to="/login" style={{ color: "#2190ff" }}> Login</Link></span
+                    >
+                </div>
                 <div className="signup-form">
                     <form method="POST" onSubmit={register}>
                         <div className="form-group">
@@ -74,11 +83,14 @@ const Sign_Up = () => {
                             <label htmlFor="password">Password</label>
                             <input value={password} onChange={(e) => setPassword(e.target.value)} name="password" id="password" className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
                         </div>
+                        <div className="btn-group">
+                            <button type="submit" className="form-login-btn btn-primary mb-2 mr-1 waves-effect waves-light">Login</button>
+                            <button type="reset" className="signup-btn btn-danger mb-2 mr-1 waves-effect waves-light">Reset</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
-        //Sign up role is not stored in database. You can apply logic for this according to your react code.
     );
 }
 
